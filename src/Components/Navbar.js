@@ -42,11 +42,12 @@ const Navbar = () => {
     <>
       <nav className="main-nav">
         <div className="logo">
-          <h2>
-            <Link className="nav-link" to="/">
-              <span>P</span>lag
-              <span>C</span>heck
+        <h2>
+            <Link className="nav-link2" to="/">
+              <img src={require('../Images_copy/Plag_Check.png')} height="60"></img>   
+              <h3>Ｐｌａｇ Ｃｈｅｃｋ</h3>         
             </Link>
+            
           </h2>
         </div>
 

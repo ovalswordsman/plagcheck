@@ -3,7 +3,8 @@ import "../Css/login.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import { UserContext } from "../App";
 
-const Login = () => {
+const Login = (props) => {
+
   const navigate = useNavigate();
 
   const {state, dispatch} = useContext(UserContext)
@@ -30,8 +31,9 @@ const Login = () => {
     if (res.status === 400 || !data) {
       window.alert("Invalid Credentials");
     } else {
+      props.setUserData(data)
       dispatch({type:'USER', payload:true})
-      if (data.role === "student") navigate("/studenthome");
+      if (data.user.role === "student") navigate("/studenthome");
       else navigate("/teacherhome");
     }
   };

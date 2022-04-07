@@ -5,7 +5,7 @@ const Guest = () => {
   const navigate=useNavigate();
   return (
    <div class='guest-home'>
-  <img class="icon"  onClick={()=>{navigate("/")}} src={require('../Images_copy/Plag_Check.png')} height="150" ></img>
+  <img class="icon"  onClick={()=>{navigate("/")}} src={require('../Images_copy/Plag_Check.png')} height="50" width="50"></img>
   <h3 class="icon">Ｐｌａｇ Ｃｈｅｃｋ</h3>
    {/* <input class="type-box" type="text" /> */}
    <textarea class="type-box" placeholder="Enter Text or upload file ..." name="Text1" cols="40" rows="5"></textarea>
